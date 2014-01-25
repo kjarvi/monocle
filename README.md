@@ -8,15 +8,20 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 ```lua
 require 'monocle/monocle'
 glass = Monocle:new({
-    isActive=true,
-	customPrinter=false,
-    customColor={128,128,128}
-	debugToggle='`'
+	isActive=true,
+	customPrinter=true,
+	debugToggle='`',
+	filesToWatch=
+		{
+			'main.lua',
+			'monocle/monocle.lua'
+		}
 })
 
 glass:watch("Mouse X", 'love.mouse.getX()' )
 glass:watch("Mouse Y", 'love.mouse.getY()' )
 glass:watch("FPS", 'math.floor(1/love.timer.getDelta())')
+glass:watch("Clock", 'os.clock()')
 
 function love.update(dt)
 	glass:update()
