@@ -13,8 +13,7 @@ glass = Monocle:new({
 	debugToggle='`',
 	filesToWatch=
 		{
-			'main.lua',
-			'monocle/monocle.lua'
+			'main.lua'
 		}
 })
 
