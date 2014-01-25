@@ -8,10 +8,10 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 ```lua
 require 'monocle/monocle'
 glass = Monocle:new({
-	isActive=true,
-	customPrinter=true,
-	debugToggle='`',
-	filesToWatch=
+	isActive=true,			-- Whether the debugger is initially active
+	customPrinter=false,		-- Whether Monocle prints status messages to the output
+	debugToggle='`',		-- The keyboard button for toggling Monocle
+	filesToWatch=			-- Files that, when edited, cause the game to reload automatically
 		{
 			'main.lua'
 		}
