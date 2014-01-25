@@ -12,6 +12,12 @@ function Monocle:initialize(initial)
 	self.printColor = initial.customColor or {128,128,128,128}
 	self.command = ''
 	self.debugToggle = initial.debugToggle or '`'
+	self.watchedFiles = initial.filesToWatch or {}
+	self.watchedFileTimes = {}
+	for i, v in ipairs(self.watchedFiles) do
+		assert(love.filesystem.getLastModified(v),v .. ' must not exist D:')
+		self.watchedFileTimes[i] = love.filesystem.getLastModified(v)
+	end
 
 	self:print('Monocle Initialized.')
 end
@@ -44,7 +50,7 @@ end
 function Monocle:print(text,justtext)
 	if self.printer and not justtext then
 		print("[Monocle]: " .. text)
-	elseif self.printer and justtext then
+	elseif justtext then
 		return "[Monocle]: " .. text
 	end
 end
@@ -58,8 +64,16 @@ function Monocle:update()
 			self.results[key] = 'food'
 		end
 	end
-end
 
+	for i, v in ipairs(self.watchedFiles) do
+		if self.watchedFileTimes[i] ~= love.filesystem.getLastModified(v) then
+			print('reloading')
+			self.watchedFileTimes[i] = love.filesystem.getLastModified(v)
+			love.filesystem.load('main.lua')()
+		end
+	end
+end
+--blah
 
 function Monocle:watch(name,obj)
 	if type(obj) == 'string' then
@@ -70,12 +84,12 @@ function Monocle:watch(name,obj)
 		error(self:print('Object to watch is not a string'))
 	end
 end
-
+--[[
 function Monocle:unwatch(name)
 	self.listeners[name] = nil
-	self.results[name] = nil
+	self.results = {}
 end
-
+--]]
 function Monocle:draw()
 	if self.active then
 		love.graphics.setColor(self.printColor)
