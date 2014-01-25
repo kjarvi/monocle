@@ -7,9 +7,11 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 
 ```lua
 require 'monocle/monocle'
-glass = Monocle:new({
+glass = Monocle:new({		-- ALL of these parameters are optional!
+
 	isActive=true,			-- Whether the debugger is initially active
 	customPrinter=false,	-- Whether Monocle prints status messages to the output
+	printColor = {51,51,51}	-- Color to print debug with
 	debugToggle='`',		-- The keyboard button for toggling Monocle
 	filesToWatch=			-- Files that, when edited, cause the game to reload automatically
 		{
