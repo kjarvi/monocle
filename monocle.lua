@@ -64,8 +64,8 @@ end
 
 function Monocle.update()
 	for key,obj in ipairs(Monocle.listeners) do
-		if type(obj) == 'string' then
-			Monocle.results[key] = loadstring('return ' .. obj)() or 'Error!'
+		if type(obj) == 'function' then
+			Monocle.results[key] = obj() or 'Error!'
 		elseif type(obj) == 'table' then
 			Monocle.results[key] = 'food'
 		end
@@ -82,7 +82,7 @@ end
 --blah
 
 function Monocle.watch(name,obj)
-	if type(obj) == 'string' then
+	if type(obj) == 'function' then
 		Monocle.print('Watching ' .. name)
 		table.insert(Monocle.listeners,obj)
 		table.insert(Monocle.names,name)
@@ -91,7 +91,7 @@ function Monocle.watch(name,obj)
 		error('Object to watch is not a string')
 	end
 end
---[[
+--[[ Out of date
 function Monocle.unwatch(name)
 	Monocle.listeners[name] = nil
 	Monocle.results = {}
