@@ -14,7 +14,7 @@ function Monocle.new(initial)
 	Monocle.textCursorPosition = 0
 
 	Monocle.printer = initial.customPrinter or false
-	Monocle.printColor = initial.customColor or {128,128,128,128}
+	Monocle.printColor = initial.customColor or {64,64,64,128}
 
 	Monocle.debugToggle = initial.debugToggle or '`'
 
@@ -164,6 +164,7 @@ function love.errhand(msg)
 	for i, v in pairs(Monocle.results) do
 		table.insert(mon, Monocle.names[i] .. ": " .. v)
 	end
+	table.insert(err, "[Monocle] An error has occurred! You can either close this and reload the game, or edit your code and come back to this window. The game should automatically reload it's main.lua file when it detects changes in your files (the files specified by 'filesToWatch' in your Monocle.new() parameters\n")
 	table.insert(err, "Error\n")
 	table.insert(err, msg.."\n\n")
 
@@ -183,7 +184,7 @@ function love.errhand(msg)
 	local function draw()
 		love.graphics.clear()
 		love.graphics.printf(p, 150, 70, love.graphics.getWidth()-150)
-		love.graphics.printf(table.concat(mon,'\n'), 0, 0, 150)
+		love.graphics.printf(table.concat(mon,'\n'), 0, 15, 150)
 		love.graphics.present()
 	end
 
@@ -203,6 +204,16 @@ function love.errhand(msg)
 
 		if love.timer then
 			love.timer.sleep(0.1)
+			for i, v in ipairs(Monocle.watchedFiles) do
+				if Monocle.watchedFileTimes[i] ~= love.filesystem.getLastModified(v) then
+					print('reloading')
+					Monocle.watchedFileTimes[i] = love.filesystem.getLastModified(v)
+					love.filesystem.load('main.lua')()
+					love.run()
+					love.graphics.setBackgroundColor(89, 157, 220)
+					love.graphics.setColor(255,255,255)
+				end
+			end
 		end
 	end
 
