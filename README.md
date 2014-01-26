@@ -30,3 +30,5 @@ end
 ```
 Easy as that! When the game is run, what you're watching will show up in the top right of the screen.
 
+For more information on how to use Monocle, as well as the official Love2D forum post, look [here](http://love2d.org/forums/viewtopic.php?f=5&t=77108).
+
