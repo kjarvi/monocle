@@ -34,7 +34,6 @@ function Monocle.textinput(text)
 	elseif text == Monocle.debugToggle then
 		Monocle.active = not Monocle.active
 	end
-	print(text)
 end
 
 function Monocle.keypressed(key)

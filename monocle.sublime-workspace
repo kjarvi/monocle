@@ -1,0 +1,853 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"wat",
+				"watchedFileTimes"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"or",
+				"or"
+			],
+			[
+				"prin",
+				"print_y"
+			],
+			[
+				"get",
+				"getHeight"
+			],
+			[
+				"col",
+				"collisionMask"
+			],
+			[
+				"hit",
+				"hitSomething"
+			],
+			[
+				"bound",
+				"boundHeight"
+			],
+			[
+				"bou",
+				"boundOffset"
+			],
+			[
+				"is",
+				"isWalking"
+			],
+			[
+				"til",
+				"tileSize"
+			],
+			[
+				"cu",
+				"currPath"
+			],
+			[
+				"cur",
+				"currDir"
+			],
+			[
+				"curre",
+				"currentString"
+			],
+			[
+				"g",
+				"get	Get Elements"
+			],
+			[
+				"ac",
+				"activedata"
+			],
+			[
+				"on",
+				"onchange	Attr"
+			],
+			[
+				"as",
+				"assets"
+			],
+			[
+				"ent",
+				"entryIndex"
+			],
+			[
+				"Jo",
+				"Josefin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "monocle.lua",
+			"settings":
+			{
+				"buffer_size": 3226,
+				"line_ending": "Windows",
+				"name": "local new = require 'monocle.lib.middleclass'"
+			}
+		},
+		{
+			"file": "/C/Users/Kurt1995/Desktop/Monocle/main.lua",
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Windows",
+				"name": "require 'monocle/monocle'"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 632,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Love2D.sublime-build",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: function"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 408.0
+	},
+	"console":
+	{
+		"height": 200.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Kurt1995/Desktop/Monocle/conf.lua",
+		"/C/Users/Kurt1995/Desktop/Monocle/cupid.lua",
+		"/C/Users/Kurt1995/Desktop/test.lua",
+		"/C/Users/Kurt1995/Desktop/theTerminal/classes/shell.lua",
+		"/C/Users/Kurt1995/Desktop/theTerminal/classes/network.lua",
+		"/C/Users/Kurt1995/Desktop/theTerminal/classes/application.lua",
+		"/C/Users/Kurt1995/Desktop/theTerminal/lib/console.lua",
+		"/C/Users/Kurt1995/Desktop/theTerminal/main.lua",
+		"/C/Users/Kurt1995/Downloads/Beetle Debugging Library (1)/Beetle.lua",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Kurt1995/Desktop/Monocle/monocle/README.md",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/User/LESS.sublime-settings",
+		"/C/Users/Kurt1995/floobits/msgs.floobits.log",
+		"/C/Users/Kurt1995/Desktop/Monocle/monocle/monocle.lua",
+		"/C/Users/Kurt1995/Desktop/Monocle/main.lua",
+		"/C/Users/Kurt1995/floobits/welcome.md",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/Love2D.sublime-build",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/classes/maplayer.lua",
+		"/C/Users/Kurt1995/Documents/LuaProjects/Twine/lib/middleclass.lua",
+		"/C/Users/Kurt1995/Documents/LuaProjects/Twine/lib/underscore.lua",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/User/Lua.sublime-build",
+		"/C/Users/Kurt1995/Desktop/lui/lui/lui.lua",
+		"/C/Users/Kurt1995/Desktop/lui/lui/classes/blank.lua",
+		"/C/Users/Kurt1995/Desktop/lui/lui/classes/container.lua",
+		"/C/Users/Kurt1995/Desktop/lapp/lapp/classes/button.lua",
+		"/C/Users/Kurt1995/Desktop/lapp/lapp/classes/common.lua",
+		"/C/Users/Kurt1995/Desktop/lui/lui/lib/underscore.lua",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/lib/malt.lua",
+		"/C/Users/Kurt1995/Desktop/lui/lui/screens/example.lua",
+		"/C/Users/Kurt1995/Desktop/lapp/lapp/lapp.lua",
+		"/C/Users/Kurt1995/Desktop/lapp/main.lua",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keep/files/less/style.less",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keep/blah.html",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keep/index.html",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keep/package.json",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keep/i/less/global.less",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/Camaleon/Camaleon.sublime-settings",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/User/Camaleon.sublime-settings",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keepsake/package.json",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keepsake/index.html",
+		"/C/Users/Kurt1995/Desktop/Monocle/monocle/luac.lua",
+		"/C/Program Files/nodejs/node_modules/npm/node_modules/node-gyp/package.json",
+		"/C/Users/Kurt1995/Desktop/Monocle/monocle/lib/customHandler.lua",
+		"/C/Users/Kurt1995/AppData/Local/Temp/Temp1_Beetle Debugging Library.zip/Beetle.lua",
+		"/C/Users/Kurt1995/Documents/UserStyles/interpals_template.css",
+		"/C/Users/Kurt1995/Documents/UserStyles/blah.css",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/main.lua",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/classes/player.lua",
+		"/C/Users/Kurt1995/Desktop/gallery/index.html",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/map.lua",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/tiletext.lua",
+		"/C/Users/Kurt1995/Desktop/game_v0.0.1/fizz.lua",
+		"/C/Users/Kurt1995/Desktop/pfov/main.lua",
+		"/C/Users/Kurt1995/Desktop/pfov/ppfov.lua",
+		"/C/Users/Kurt1995/Desktop/town/classes/prop.lua",
+		"/C/Users/Kurt1995/Desktop/town/classes/maplayer.lua",
+		"/C/Users/Kurt1995/Desktop/town/classes/player.lua",
+		"/C/Users/Kurt1995/Desktop/town/classes/camera.lua",
+		"/C/Users/Kurt1995/Desktop/town/classes/gvars.lua",
+		"/C/Users/Kurt1995/Desktop/town/changelog.md",
+		"/C/Users/Kurt1995/Desktop/town/main.lua",
+		"/C/Users/Kurt1995/Desktop/town/lib/gvars.lua",
+		"/C/Users/Kurt1995/Desktop/town/bump/main.lua",
+		"/C/Users/Kurt1995/Desktop/town/lib/d/main.lua",
+		"/C/Users/Kurt1995/Desktop/town/lib/malt.lua",
+		"/C/Users/Kurt1995/Desktop/town/tiletext.lua",
+		"/C/Users/Kurt1995/Desktop/town/malt.lua",
+		"/C/Users/Kurt1995/Desktop/town/untitled.lua",
+		"/C/Users/Kurt1995/Desktop/town/untitled.txt",
+		"/C/Users/Kurt1995/Desktop/town/classes/mapba.lua",
+		"/C/Users/Kurt1995/Desktop/town/tilestuff.lua",
+		"/C/Users/Kurt1995/Downloads/sh/ShaderEffect.lua",
+		"/C/Users/Kurt1995/Downloads/sh/main.lua",
+		"/C/Users/Kurt1995/Downloads/sh/shader/shockwave.lua",
+		"/C/Users/Kurt1995/Desktop/town/tiledmap.lua",
+		"/C/Users/Kurt1995/Desktop/town/map/map11.tmx",
+		"/C/Users/Kurt1995/Desktop/town/tileloader.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/classes/input.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/main.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/classes/system.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/commands.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/lib/gvars.lua",
+		"/C/Users/Kurt1995/Desktop/noconsolation/classes/shell.lua",
+		"/C/Users/Kurt1995/Desktop/Sublime Text/Data/Packages/love.sublime-build",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keepsake/assets/data/bata backup.json",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keepsake/assets/data/data.json",
+		"/C/Users/Kurt1995/Desktop/Sublime Text Build 3047 x64/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Kurt1995/Desktop/Sublime Text Build 3047 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Kurt1995/Desktop/node-webkit/keepsake/assets/less/node-webkit.zip"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"command",
+			"self",
+			"glass",
+			"Monocle:",
+			":",
+			"self",
+			"key",
+			"F1",
+			"LiveFile",
+			"Live",
+			"print",
+			"self.isActive",
+			"textBox",
+			"blank",
+			"textBox",
+			"._o",
+			"_o.",
+			"_o",
+			"Common",
+			"textBox",
+			"_options",
+			" \n",
+			"Lapp",
+			"end",
+			"print",
+			"{}\n",
+			"box one",
+			"30%",
+			"bind",
+			"skin",
+			"self.boundX",
+			"self.boundY",
+			"self.boundX",
+			"v",
+			"skin",
+			"Map",
+			"camera",
+			"(),\n",
+			"png",
+			"curr",
+			"contains",
+			"con",
+			"contains",
+			"isin",
+			"h",
+			"5",
+			"theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Monocle",
+			"Monocle.",
+			".",
+			"self.active",
+			"button",
+			"textBox",
+			"blank",
+			"",
+			"container",
+			"_o",
+			"Lui",
+			"item",
+			"100%",
+			"self.boundX+offx",
+			"self.boundY+offy",
+			"obj",
+			"imageobj",
+			"obj",
+			"image",
+			"MapLayer",
+			"self"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "monocle.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1017,
+								1013
+							]
+						],
+						"settings":
+						{
+							"auto_name": "local new = require 'monocle.lib.middleclass'",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 486.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Kurt1995/Desktop/Monocle/main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								476,
+								476
+							]
+						],
+						"settings":
+						{
+							"auto_name": "require 'monocle/monocle'",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 632,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								258,
+								258
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 241.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "monocle.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Kurt1995\\Desktop\\Monocle\\monocle\\monocle.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 199.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
