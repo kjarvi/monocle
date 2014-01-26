@@ -5,6 +5,11 @@ function Monocle.new(initial)
 	Monocle.listeners = {}
 	Monocle.results = {}
 
+	Monocle.printqueue = {}
+
+	Monocle.commands = {}
+	Monocle.cmdresults = {}
+
 	Monocle.text = ''
 	Monocle.textCursorPosition = 0
 
@@ -29,6 +34,7 @@ function Monocle.textinput(text)
 	elseif text == Monocle.debugToggle then
 		Monocle.active = not Monocle.active
 	end
+	print(text)
 end
 
 function Monocle.keypressed(key)
@@ -109,7 +115,7 @@ function Monocle.draw()
 				end
 			end
 			draw_y = draw_y + 1
-		end
+		end	-- For name,result
 	end -- Monocle.active
 end
 
