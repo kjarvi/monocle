@@ -7,37 +7,24 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 
 ```lua
 require 'monocle/monocle'
-glass = Monocle:new({		-- ALL of these parameters are optional!
+Monocle.new()
 
-	isActive=true,			-- Whether the debugger is initially active
-	customPrinter=false,	-- Whether Monocle prints status messages to the output
-	printColor = {51,51,51}	-- Color to print debug with
-	debugToggle='`',		-- The keyboard button for toggling Monocle
-	filesToWatch=			-- Files that, when edited, cause the game to reload automatically
-		{
-			'main.lua'
-		}
-})
-
-glass:watch("Mouse X", 'love.mouse.getX()' )
-glass:watch("Mouse Y", 'love.mouse.getY()' )
-glass:watch("FPS", 'math.floor(1/love.timer.getDelta())')
-glass:watch("Clock", 'os.clock()')
+Monocle.watch("FPS", 'math.floor(1/love.timer.getDelta())')
 
 function love.update(dt)
-	glass:update()
+	Monocle.update()
 end
 
 function love.draw()
-	glass:draw()
+	Monocle.draw()
 end
 
 function love.textinput(t)
-	glass:textinput(t)
+	Monocle.textinput(t)
 end
 
 function love.keypressed(text)
-	glass:keypressed(text)
+	Monocle.keypressed(text)
 end
 ```
 Easy as that! When the game is run, what you're watching will show up in the top right of the screen.

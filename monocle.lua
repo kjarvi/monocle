@@ -4,16 +4,19 @@ function Monocle.new(initial)
 	Monocle.names = {}
 	Monocle.listeners = {}
 	Monocle.results = {}
+
 	Monocle.text = ''
 	Monocle.textCursorPosition = 0
+
 	Monocle.printer = initial.customPrinter or false
 	Monocle.printColor = initial.customColor or {128,128,128,128}
-	Monocle.command = ''
+
 	Monocle.debugToggle = initial.debugToggle or '`'
+
 	Monocle.watchedFiles = initial.filesToWatch or {}
 	Monocle.watchedFileTimes = {}
 	for i, v in ipairs(Monocle.watchedFiles) do
-		assert(love.filesystem.getLastModified(v),v .. ' must not exist D:')
+		assert(love.filesystem.getLastModified(v),v .. ' must not exist or is in the wrong directory. Oh no! D:')
 		Monocle.watchedFileTimes[i] = love.filesystem.getLastModified(v)
 	end
 
