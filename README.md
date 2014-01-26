@@ -9,7 +9,8 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 require 'monocle/monocle'
 Monocle.new()
 
-Monocle.watch("FPS", 'math.floor(1/love.timer.getDelta())')
+-- The most basic way to watch any expression or variable:
+Monocle.watch("FPS", function() return math.floor(1/love.timer.getDelta()) end)
 
 function love.update(dt)
 	Monocle.update()
