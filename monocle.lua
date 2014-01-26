@@ -79,8 +79,6 @@ function Monocle.update()
 		end
 	end
 end
---blah
-
 function Monocle.watch(name,obj)
 	if type(obj) == 'function' then
 		Monocle.print('Watching ' .. name)
