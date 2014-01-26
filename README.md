@@ -42,5 +42,3 @@ end
 ```
 Easy as that! When the game is run, what you're watching will show up in the top right of the screen.
 
-#### Credits
-This lib uses [middleclass](https://github.com/kikito/middleclass) for it's object orientation. Thank you :)
