@@ -118,4 +118,98 @@ function Monocle.draw()
 	end -- Monocle.active
 end
 
+local function error_printer(msg, layer)
+	print((debug.traceback("Error: " .. tostring(msg), 1+(layer or 1)):gsub("\n[^\n]+$", "")))
+end
+
+function love.errhand(msg)
+	msg = tostring(msg)
+
+	error_printer(msg, 2)
+
+	if not love.window or not love.graphics or not love.event then
+		return
+	end
+
+	if not love.graphics.isCreated() or not love.window.isCreated() then
+		if not pcall(love.window.setMode, 800, 600) then
+			return
+		end
+	end
+
+	-- Reset state.
+	if love.mouse then
+		love.mouse.setVisible(true)
+		love.mouse.setGrabbed(false)
+	end
+	if love.joystick then
+		for i,v in ipairs(love.joystick.getJoysticks()) do
+			v:setVibration() -- Stop all joystick vibrations.
+		end
+	end
+	if love.audio then love.audio.stop() end
+	love.graphics.reset()
+	love.graphics.setBackgroundColor(89, 157, 220)
+	local font = love.graphics.setNewFont(14)
+
+	love.graphics.setColor(255, 255, 255, 255)
+
+	local trace = debug.traceback()
+
+	love.graphics.clear()
+	love.graphics.origin()
+
+	local err = {}
+	local mon = {}
+	for i, v in pairs(Monocle.results) do
+		table.insert(mon, Monocle.names[i] .. ": " .. v)
+	end
+	table.insert(err, "Error\n")
+	table.insert(err, msg.."\n\n")
+
+	for l in string.gmatch(trace, "(.-)\n") do
+		if not string.match(l, "boot.lua") then
+			l = string.gsub(l, "stack traceback:", "Traceback\n")
+			table.insert(err, l)
+		end
+	end
+
+
+	local p = table.concat(err, "\n")
+
+	p = string.gsub(p, "\t", "")
+	p = string.gsub(p, "%[string \"(.-)\"%]", "%1")
+
+	local function draw()
+		love.graphics.clear()
+		love.graphics.printf(p, 150, 70, love.graphics.getWidth()-150)
+		love.graphics.printf(table.concat(mon,'\n'), 0, 0, 150)
+		love.graphics.present()
+	end
+
+	while true do
+		love.event.pump()
+
+		for e, a, b, c in love.event.poll() do
+			if e == "quit" then
+				return
+			end
+			if e == "keypressed" and a == "escape" then
+				return
+			end
+		end
+
+		draw()
+
+		if love.timer then
+			love.timer.sleep(0.1)
+		end
+	end
+
+end
+
+
+
+
 return Monocle
+
