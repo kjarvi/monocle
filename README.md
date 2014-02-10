@@ -7,7 +7,7 @@ It's easy to implement, and easy to understand. The setup of a basic main.lua fi
 
 ```lua
 require 'monocle/monocle'
-Monocle.new()
+Monocle.new({})
 
 -- The most basic way to watch any expression or variable:
 Monocle.watch("FPS", function() return math.floor(1/love.timer.getDelta()) end)
