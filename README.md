@@ -1,6 +1,6 @@
 # Monocle
 
-### Debugging Love2D, in *style*
+### Debugging Love2D with grace
 
 Monocle is a way to easily watch things while you play your game. 
 It's easy to implement, and easy to understand. The setup of a basic main.lua file is as follows:
