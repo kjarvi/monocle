@@ -21,7 +21,7 @@ function Monocle.new(initial)
 	Monocle.watchedFiles = initial.filesToWatch or {}
 	Monocle.watchedFileTimes = {}
 	for i, v in ipairs(Monocle.watchedFiles) do
-		assert(love.filesystem.getLastModified(v),v .. ' must not exist or is in the wrong directory. Oh no! D:')
+		assert(love.filesystem.getLastModified(v),v .. ' must not exist or is in the wrong directory.)
 		Monocle.watchedFileTimes[i] = love.filesystem.getLastModified(v)
 	end
 
